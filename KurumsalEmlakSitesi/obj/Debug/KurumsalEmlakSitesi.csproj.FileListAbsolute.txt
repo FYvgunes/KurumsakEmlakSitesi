@@ -53,3 +53,5 @@ C:\Users\Veysel Gunes\source\repos\KurumsalEmlakSitesi\KurumsalEmlakSitesi\bin\M
 C:\Users\Veysel Gunes\source\repos\KurumsalEmlakSitesi\KurumsalEmlakSitesi\obj\Debug\KurumsalEmlakSitesi.csproj.CopyComplete
 C:\Users\Veysel Gunes\source\repos\KurumsalEmlakSitesi\KurumsalEmlakSitesi\obj\Debug\KurumsalEmlakSitesi.dll
 C:\Users\Veysel Gunes\source\repos\KurumsalEmlakSitesi\KurumsalEmlakSitesi\obj\Debug\KurumsalEmlakSitesi.pdb
+C:\Users\Veysel Gunes\source\repos\KurumsalEmlakSitesi\KurumsalEmlakSitesi\bin\CKEditor.NET.dll
+C:\Users\Veysel Gunes\source\repos\KurumsalEmlakSitesi\KurumsalEmlakSitesi\bin\CKEditor.NET.pdb
