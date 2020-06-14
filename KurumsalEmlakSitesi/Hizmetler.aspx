@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Kullanici.Master" AutoEventWireup="true" CodeBehind="Servisler.aspx.cs" Inherits="KurumsalEmlakSitesi.Servisler" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Kullanici.Master" AutoEventWireup="true" CodeBehind="Hizmetler.aspx.cs" Inherits="KurumsalEmlakSitesi.Servisler" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -13,7 +13,7 @@
 				    <div class="text list_2_of_1">
 						<h4>Service - 01</h4>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt  ut labore et dolore.Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
-						<div class="view-all"><a href="events.html">More Info</a></div>
+						<div class="view-all"><a href="HizmetDetay.aspx">More Info</a></div>
 				   </div>
 			   </div>			
 				<div class="listview_1_of_2 images_1_of_2">
@@ -23,7 +23,7 @@
 					<div class="text list_2_of_1">
 						  <h4>Service - 02</h4>
 						  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt  ut labore et dolore.Lorem ipsum dolor sit amet  sed do eiusmod tempor incididunt ut labore.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-						 <div class="view-all"><a href="events.html">More Info</a></div>
+						 <div class="view-all"><a href="HizmetDetay.aspx">More Info</a></div>
 					</div>
 				</div>
 			</div>
@@ -35,7 +35,7 @@
 				    <div class="text list_2_of_1">
 						<h4>Service - 01</h4>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt  ut labore et dolore.Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
-						<div class="view-all"><a href="events.html">More Info</a></div>
+						<div class="view-all"><a href="HizmetDetay.aspx">More Info</a></div>
 				   </div>
 			   </div>			
 				<div class="listview_1_of_2 images_1_of_2">
@@ -45,7 +45,7 @@
 					<div class="text list_2_of_1">
 						  <h4>Service - 02</h4>
 						  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt  ut labore et dolore.Lorem ipsum dolor sit amet  sed do eiusmod tempor incididunt ut labore.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-						 <div class="view-all"><a href="events.html">More Info</a></div>
+						 <div class="view-all"><a href="HizmetDetay.aspx">More Info</a></div>
 					</div>
 				</div>
 			</div>
@@ -57,7 +57,7 @@
 				    <div class="text list_2_of_1">
 						<h4>Service - 01</h4>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt  ut labore et dolore.Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
-						<div class="view-all"><a href="events.html">More Info</a></div>
+						<div class="view-all"><a href="HizmetDetay.aspx">More Info</a></div>
 				   </div>
 			   </div>			
 				<div class="listview_1_of_2 images_1_of_2">
@@ -67,7 +67,7 @@
 					<div class="text list_2_of_1">
 						  <h4>Service - 02</h4>
 						  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt  ut labore et dolore.Lorem ipsum dolor sit amet  sed do eiusmod tempor incididunt ut labore.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-						 <div class="view-all"><a href="events.html">More Info</a></div>
+						 <div class="view-all"><a href="HizmetDetay.aspx">More Info</a></div>
 					</div>
 				</div>
 			</div>
@@ -87,7 +87,7 @@
 		     		<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
 		     		<span><a href="#">read more</a></span>
 		     	</div>
-		     	<div class="view-all"><a href="events.html">ViewAll</a></div>
+		     	<div class="view-all"><a href="HizmetDetay.aspx">ViewAll</a></div>
           </div>	
         </div>
         <div class="sidebar_right_bottom">
