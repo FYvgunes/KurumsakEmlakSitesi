@@ -1,9 +1,10 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/kurumsaluser/Admin.Master" AutoEventWireup="true" CodeBehind="Haberler.aspx.cs" Inherits="KurumsalEmlakSitesi.kurumsaluser.Haberler" %>
+
 <%@ Register Assembly="CKEditor.NET" Namespace="CKEditor.NET" TagPrefix="CKEditor" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-      <section class="content-header">
+    <section class="content-header">
         <h1>Haberler</h1>
         <ol class="breadcrumb">
             <li><a href="#"><i class="fa fa-dashboard"></i>Haberler</a></li>
@@ -14,7 +15,7 @@
             <div class="col-lg-12">
                 <div class="box box-warning box-solid">
                     <div class="box-header with-border">
-                        <h3 class="box-title">Hizmet Ekle</h3>
+                        <h3 class="box-title">Haber Ekle</h3>
                         <div class="box-tools pull-right">
                             <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
                         </div>
@@ -22,31 +23,35 @@
                     </div>
                     <!-- /.box-header -->
                     <div class="box-body">
-                        <div class="form-group"> 
-                            <label for="exampleInputFile">Başlık</label>
-                            <asp:FileUpload ID="fu_Dosya" runat="server" />
-                            <p class="help-block">Dosya Ekle</p>
-                        </div>
+
+
                         <div class="form-group">
-                            <label id="Label1" runat="server">Resim Seç</label>
-                            <asp:TextBox ID="txt_dBaslik" CssClass="form-control" runat="server"></asp:TextBox>
-                        </div>
-                        <div class="form-group">
-                            <label id="Label2" runat="server">Resim seç </label>
-                            <asp:DropDownList ID="ddl_mKategori" CssClass="form-control" runat="server"></asp:DropDownList>
+                            <label id="Label2" runat="server">Başlık</label>
+                            <asp:TextBox ID="txt_baslik" CssClass="form-control" runat="server"></asp:TextBox>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Başlık Kısmını boş geçmeyin" ForeColor="Red" Font-Bold="true" ControlToValidate="txt_baslik" SetFocusOnError="true"></asp:RequiredFieldValidator>
+
                         </div>
                         <div class="form-group">
                             <label>Özet</label>
-                            <asp:TextBox ID="txt_seoice" TextMode="MultiLine" CssClass="form-control" runat="server"></asp:TextBox>
+                            <asp:TextBox ID="txt_ozet" TextMode="MultiLine" CssClass="form-control" runat="server"></asp:TextBox>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="Özet Kısmını boş geçmeyin" ForeColor="Red" Font-Bold="true" ControlToValidate="txt_ozet" SetFocusOnError="true"></asp:RequiredFieldValidator>
+
                         </div>
                         <div class="form-group">
                             <label>İçerik</label>
-                            <CKEditor:CKEditorControl ID="CKEditorControl1" runat="server"></CKEditor:CKEditorControl>
-                         
+                            <CKEditor:CKEditorControl ID="txt_icerik" runat="server"></CKEditor:CKEditorControl>
+
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputFile">Başlık</label>
+                            <asp:FileUpload ID="fu_Dosya" CssClass="form-control" runat="server" />
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="Resim Kısmını boş geçmeyin" ForeColor="Red" Font-Bold="true" ControlToValidate="fu_Dosya" SetFocusOnError="true"></asp:RequiredFieldValidator>
+
+                            <p class="help-block">Dosya Ekle</p>
                         </div>
                         <div class="form-group" style="width: 200px;">
-                            <asp:Button ID="Button1" runat="server" CssClass="btn btn-block btn-primary" Text="EKLE" />
-                            <asp:Button ID="btn_mtemizle" runat="server" CssClass="btn btn-block btn-danger" Text="TEMİZLE" />
+                            <asp:Button ID="Button1" runat="server" CssClass="btn btn-block btn-primary" Text="EKLE" OnClick="Button1_Click" />
+                            <asp:Button ID="btn_mtemizle" runat="server" CssClass="btn btn-block btn-danger" Text="TEMİZLE" OnClick="btn_mtemizle_Click" />
                         </div>
                         <asp:Panel ID="pnl_gdogru" runat="server">
                             <div class="form-group">
@@ -76,7 +81,7 @@
             <div class="col-lg-12">
                 <div class="box box-warning box-solid">
                     <div class="box-header with-border">
-                        <h3 class="box-title">Hizmetler</h3>
+                        <h3 class="box-title">Haberler</h3>
                         <div class="box-tools pull-right">
                             <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
                         </div>
@@ -95,20 +100,20 @@
                                             <th>Güncelle</th>
                                             <th>Sil</th>
                                         </tr>
-                                        <asp:Repeater ID="dl_makaleler" runat="server">
+                                        <asp:Repeater ID="dl_Haberler" runat="server">
                                             <ItemTemplate>
                                                 <tr>
                                                     <td>
-                                                       
+                                                        <asp:Label ID="Label1" runat="server" Text='<%# Eval("Haberid") %>'></asp:Label>
                                                     </td>
                                                     <td>
-                                                        
+                                                        <asp:Label ID="Label3" runat="server" Text='<%# Eval("HaberBaslik") %>'></asp:Label>
                                                     </td>
                                                     <td>
-                                                        
+                                                        <asp:Label ID="Label4" runat="server" Text='<%# Eval("HaberTarih") %>'></asp:Label>
                                                     </td>
-                                                    <td><a href=""><i class="fa fa-pencil"></i></a></td>
-                                                    <td><a href=""><i class="fa fa-trash-o"></i></a></td>
+                                                    <td><a href="HaberlerDuzenle.aspx?Haberid=<%# Eval("Haberid") %>"><i class="fa fa-pencil"></i></a></td>
+                                                    <td><a href="Haberler.aspx?Haberid=<%# Eval("Haberid") %>&islem=sil"><i class="fa fa-trash-o"></i></a></td>
                                                 </tr>
                                             </ItemTemplate>
                                         </asp:Repeater>

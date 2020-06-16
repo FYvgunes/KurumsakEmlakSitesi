@@ -4,10 +4,10 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-     <section class="content-header">
+    <section class="content-header">
         <h1>Hizmetler</h1>
         <ol class="breadcrumb">
-            <li><a href="#"><i class="fa fa-dashboard"></i>Hizmetler</a></li>
+            <li><a href="#"><i class="fa fa-dashboard"></i>Haberler</a></li>
         </ol>
     </section>
     <section class="content">
@@ -15,7 +15,7 @@
             <div class="col-lg-12">
                 <div class="box box-warning box-solid">
                     <div class="box-header with-border">
-                        <h3 class="box-title">Haber Ekle</h3>
+                        <h3 class="box-title">Haber Güncelle</h3>
                         <div class="box-tools pull-right">
                             <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
                         </div>
@@ -24,12 +24,24 @@
                     <!-- /.box-header -->
                     <div class="box-body">
                         <div class="form-group">
+                            <label id="Label3" runat="server">Başlık</label>
+                            <asp:TextBox ID="txt_baslik" CssClass="form-control" runat="server"></asp:TextBox>
+
+                        </div>
+                        <div class="form-group">
+                            <label id="Label1" runat="server">Özet</label>
+                            <asp:TextBox ID="txt_ozet" CssClass="form-control" runat="server"></asp:TextBox>
+
+                        </div>
+                    </div>
+                    <div class="box-body">
+                        <div class="form-group">
                             <label id="Label2" runat="server">İçerik</label>
                             <CKEditor:CKEditorControl ID="txt_hicerik" runat="server"></CKEditor:CKEditorControl>
                         </div>
                         <div class="form-group" style="width: 200px;">
                             <asp:Button ID="Button1" runat="server" CssClass="btn btn-block btn-primary" Text="GÜNCELLE" OnClick="Button1_Click" />
-                            <asp:Button ID="btn_mtemizle" runat="server" CssClass="btn btn-block btn-danger" Text="TEMİZLE" />
+                            <asp:Button ID="btn_mtemizle" runat="server" CssClass="btn btn-block btn-danger" Text="TEMİZLE" OnClick="btn_mtemizle_Click" />
                         </div>
                         <asp:Panel ID="pnl_gdogru" runat="server">
                             <div class="form-group">
@@ -55,6 +67,6 @@
                 <!-- /.box -->
             </div>
         </div>
-        
+
     </section>
 </asp:Content>

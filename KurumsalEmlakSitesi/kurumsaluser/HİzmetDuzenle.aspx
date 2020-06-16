@@ -31,6 +31,7 @@
                         <div class="form-group">
                             <label id="Label1" runat="server">Özet</label>
                             <asp:TextBox ID="txt_ozet" CssClass="form-control" runat="server"></asp:TextBox>
+
                         </div>
                         <div class="form-group">
                             <label id="Label2" runat="server">İçerik</label>
