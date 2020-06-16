@@ -15,15 +15,6 @@ namespace KurumsalEmlakSitesi
     {
 
         /// <summary>
-        /// fu_Dosya control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload fu_Dosya;
-
-        /// <summary>
         /// Label1 control.
         /// </summary>
         /// <remarks>
@@ -42,24 +33,6 @@ namespace KurumsalEmlakSitesi
         protected global::System.Web.UI.WebControls.TextBox txt_dBaslik;
 
         /// <summary>
-        /// Label2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Label2;
-
-        /// <summary>
-        /// ddl_mKategori control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddl_mKategori;
-
-        /// <summary>
         /// txt_seoice control.
         /// </summary>
         /// <remarks>
@@ -69,13 +42,22 @@ namespace KurumsalEmlakSitesi
         protected global::System.Web.UI.WebControls.TextBox txt_seoice;
 
         /// <summary>
-        /// CKEditorControl1 control.
+        /// txt_icerik control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::CKEditor.NET.CKEditorControl CKEditorControl1;
+        protected global::CKEditor.NET.CKEditorControl txt_icerik;
+
+        /// <summary>
+        /// fu_dosya control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.FileUpload fu_dosya;
 
         /// <summary>
         /// Button1 control.
@@ -114,12 +96,12 @@ namespace KurumsalEmlakSitesi
         protected global::System.Web.UI.WebControls.Panel pnl_gyanlis;
 
         /// <summary>
-        /// dl_makaleler control.
+        /// dl_hizmetler control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater dl_makaleler;
+        protected global::System.Web.UI.WebControls.Repeater dl_hizmetler;
     }
 }

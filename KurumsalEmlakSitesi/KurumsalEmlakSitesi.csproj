@@ -1130,6 +1130,7 @@
     <Compile Include="Hizmetler.aspx.designer.cs">
       <DependentUpon>Hizmetler.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Sqlbaglanti.cs" />
     <Compile Include="System\Web\UI\Design.cs" />
   </ItemGroup>
   <ItemGroup>
