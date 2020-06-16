@@ -11,8 +11,26 @@ namespace KurumsalEmlakSitesi.kurumsaluser
 {
 
 
-    public partial class Projeler
+    public partial class ProjeDetay
     {
+
+        /// <summary>
+        /// Label3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Label3;
+
+        /// <summary>
+        /// txt_baslik control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txt_baslik;
 
         /// <summary>
         /// Label1 control.
@@ -24,15 +42,6 @@ namespace KurumsalEmlakSitesi.kurumsaluser
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl Label1;
 
         /// <summary>
-        /// txt_dBaslik control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_dBaslik;
-
-        /// <summary>
         /// txt_ozet control.
         /// </summary>
         /// <remarks>
@@ -42,6 +51,15 @@ namespace KurumsalEmlakSitesi.kurumsaluser
         protected global::System.Web.UI.WebControls.TextBox txt_ozet;
 
         /// <summary>
+        /// Label2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Label2;
+
+        /// <summary>
         /// txt_icerik control.
         /// </summary>
         /// <remarks>
@@ -49,15 +67,6 @@ namespace KurumsalEmlakSitesi.kurumsaluser
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::CKEditor.NET.CKEditorControl txt_icerik;
-
-        /// <summary>
-        /// fu_Dosya control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload fu_Dosya;
 
         /// <summary>
         /// Button1 control.
@@ -94,14 +103,5 @@ namespace KurumsalEmlakSitesi.kurumsaluser
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Panel pnl_gyanlis;
-
-        /// <summary>
-        /// dl_projeler control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater dl_projeler;
     }
 }

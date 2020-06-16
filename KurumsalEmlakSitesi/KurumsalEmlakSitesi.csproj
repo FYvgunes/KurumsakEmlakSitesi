@@ -984,6 +984,7 @@
     <Content Include="kurumsaluser\plugins\timepicker\bootstrap-timepicker.js" />
     <Content Include="kurumsaluser\plugins\timepicker\bootstrap-timepicker.min.css" />
     <Content Include="kurumsaluser\plugins\timepicker\bootstrap-timepicker.min.js" />
+    <Content Include="kurumsaluser\ProjeDetay.aspx" />
     <Content Include="kurumsaluser\Projeler.aspx" />
     <Content Include="MakaleDetay.aspx" />
     <Content Include="Makaleler.aspx" />
@@ -1093,6 +1094,13 @@
     </Compile>
     <Compile Include="kurumsaluser\Mesajlar.aspx.designer.cs">
       <DependentUpon>Mesajlar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kurumsaluser\ProjeDetay.aspx.cs">
+      <DependentUpon>ProjeDetay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kurumsaluser\ProjeDetay.aspx.designer.cs">
+      <DependentUpon>ProjeDetay.aspx</DependentUpon>
     </Compile>
     <Compile Include="kurumsaluser\Projeler.aspx.cs">
       <DependentUpon>Projeler.aspx</DependentUpon>
