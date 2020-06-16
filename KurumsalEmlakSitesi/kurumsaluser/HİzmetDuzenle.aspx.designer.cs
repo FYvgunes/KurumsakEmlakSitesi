@@ -24,13 +24,13 @@ namespace KurumsalEmlakSitesi.kurumsaluser
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl Label3;
 
         /// <summary>
-        /// txt_hbaslik control.
+        /// txt_baslik control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_hbaslik;
+        protected global::System.Web.UI.WebControls.TextBox txt_baslik;
 
         /// <summary>
         /// Label1 control.
@@ -42,13 +42,13 @@ namespace KurumsalEmlakSitesi.kurumsaluser
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl Label1;
 
         /// <summary>
-        /// txt_hozet control.
+        /// txt_ozet control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::CKEditor.NET.CKEditorControl txt_hozet;
+        protected global::System.Web.UI.WebControls.TextBox txt_ozet;
 
         /// <summary>
         /// Label2 control.

@@ -25,11 +25,12 @@
                     <div class="box-body">
                         <div class="form-group">
                             <label id="Label3" runat="server">Başlık</label>
-                            <asp:TextBox ID="txt_hbaslik" CssClass="form-control" runat="server"></asp:TextBox>
+                             <asp:TextBox ID="txt_baslik" CssClass="form-control" runat="server"></asp:TextBox>
+                           
                         </div>
                         <div class="form-group">
                             <label id="Label1" runat="server">Özet</label>
-                            <CKEditor:CKEditorControl ID="txt_hozet" runat="server"></CKEditor:CKEditorControl>
+                            <asp:TextBox ID="txt_ozet" CssClass="form-control" runat="server"></asp:TextBox>
                         </div>
                         <div class="form-group">
                             <label id="Label2" runat="server">İçerik</label>
@@ -37,7 +38,7 @@
                         </div>
                         <div class="form-group" style="width: 200px;">
                             <asp:Button ID="Button1" runat="server" CssClass="btn btn-block btn-primary" Text="DÜZENLE" OnClick="Button1_Click" />
-                            <asp:Button ID="btn_mtemizle" runat="server" CssClass="btn btn-block btn-danger" Text="TEMİZLE" />
+                            <asp:Button ID="btn_mtemizle" runat="server" CssClass="btn btn-block btn-danger" Text="TEMİZLE" OnClick="btn_mtemizle_Click" />
                         </div>
                         <asp:Panel ID="pnl_gdogru" runat="server">
                             <div class="form-group">
