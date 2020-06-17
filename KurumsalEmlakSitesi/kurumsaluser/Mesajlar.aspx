@@ -1,9 +1,10 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/kurumsaluser/Admin.Master" AutoEventWireup="true" CodeBehind="Mesajlar.aspx.cs" Inherits="KurumsalEmlakSitesi.kurumsaluser.Mesajlar" %>
+
 <%@ Register Assembly="CKEditor.NET" Namespace="CKEditor.NET" TagPrefix="CKEditor" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-      <section class="content-header">
+    <section class="content-header">
         <h1>Mesajlar</h1>
         <ol class="breadcrumb">
             <li><a href="#"><i class="fa fa-dashboard"></i>Mesajlar</a></li>
@@ -22,31 +23,29 @@
                     </div>
                     <!-- /.box-header -->
                     <div class="box-body">
-                        <div class="form-group"> 
-                            <label for="exampleInputFile">Başlık</label>
-                            <asp:FileUpload ID="fu_Dosya" runat="server" />
-                            <p class="help-block">Dosya Ekle</p>
+                         <div class="form-group">
+                            <label id="Label5" runat="server">Ad Soyad</label>
+                            <asp:TextBox ID="txt_Ad" CssClass="form-control" runat="server"></asp:TextBox>
                         </div>
                         <div class="form-group">
-                            <label id="Label1" runat="server">Resim Seç</label>
+                            <label id="Label4" runat="server">Mail</label>
+                            <asp:TextBox ID="txt_mail" CssClass="form-control" runat="server" TextMode="Email"></asp:TextBox>
+                        </div>
+                        <div class="form-group">
+                            <label id="Label1" runat="server">Başlık</label>
                             <asp:TextBox ID="txt_dBaslik" CssClass="form-control" runat="server"></asp:TextBox>
                         </div>
-                        <div class="form-group">
-                            <label id="Label2" runat="server">Resim seç </label>
-                            <asp:DropDownList ID="ddl_mKategori" CssClass="form-control" runat="server"></asp:DropDownList>
-                        </div>
-                        <div class="form-group">
-                            <label>Özet</label>
-                            <asp:TextBox ID="txt_seoice" TextMode="MultiLine" CssClass="form-control" runat="server"></asp:TextBox>
-                        </div>
+                        
+
                         <div class="form-group">
                             <label>İçerik</label>
-                            <CKEditor:CKEditorControl ID="CKEditorControl1" runat="server"></CKEditor:CKEditorControl>
-                         
+                            <CKEditor:CKEditorControl ID="txt_icerik" runat="server"></CKEditor:CKEditorControl>
+
                         </div>
+                     
                         <div class="form-group" style="width: 200px;">
-                            <asp:Button ID="Button1" runat="server" CssClass="btn btn-block btn-primary" Text="EKLE" />
-                            <asp:Button ID="btn_mtemizle" runat="server" CssClass="btn btn-block btn-danger" Text="TEMİZLE" />
+                            <asp:Button ID="Button1" runat="server" CssClass="btn btn-block btn-primary" Text="EKLE" OnClick="Button1_Click" />
+                            <asp:Button ID="btn_mtemizle" runat="server" CssClass="btn btn-block btn-danger" Text="TEMİZLE"  />
                         </div>
                         <asp:Panel ID="pnl_gdogru" runat="server">
                             <div class="form-group">
@@ -72,11 +71,12 @@
                 <!-- /.box -->
             </div>
         </div>
+
         <div class="row">
             <div class="col-lg-12">
                 <div class="box box-warning box-solid">
                     <div class="box-header with-border">
-                        <h3 class="box-title">Hizmetler</h3>
+                        <h3 class="box-title">Mesajlar</h3>
                         <div class="box-tools pull-right">
                             <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
                         </div>
@@ -95,20 +95,20 @@
                                             <th>Güncelle</th>
                                             <th>Sil</th>
                                         </tr>
-                                        <asp:Repeater ID="dl_makaleler" runat="server">
+                                        <asp:Repeater ID="dl_Mesajlar" runat="server">
                                             <ItemTemplate>
                                                 <tr>
                                                     <td>
-                                                       
+                                                        <asp:Label ID="Label1" runat="server" Text='<%# Eval("Mesajid") %>'></asp:Label>
                                                     </td>
                                                     <td>
-                                                        
+                                                        <asp:Label ID="Label2" runat="server" Text='<%# Eval("Mesajad") %>'></asp:Label>
                                                     </td>
                                                     <td>
-                                                        
+                                                        <asp:Label ID="Label3" runat="server" Text='<%# Eval("MesajTarih") %>'></asp:Label>
                                                     </td>
-                                                    <td><a href=""><i class="fa fa-pencil"></i></a></td>
-                                                    <td><a href=""><i class="fa fa-trash-o"></i></a></td>
+                                                    <td><a href="MesajDetay.aspx?Mesajid=<%# Eval("Mesajid") %>"><i class="fa fa-pencil"></i></a></td>
+                                                    <td><a href="Mesajlar.aspx?Mesajid=<%# Eval("Mesajid") %>&islem=sil"><i class="fa fa-trash-o"></i></a></td>
                                                 </tr>
                                             </ItemTemplate>
                                         </asp:Repeater>

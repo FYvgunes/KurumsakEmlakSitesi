@@ -369,6 +369,7 @@
     <Content Include="kurumsaluser\build\less\variables.less" />
     <Content Include="kurumsaluser\HİzmetDuzenle.aspx" />
     <Content Include="kurumsaluser\Makaleler.aspx" />
+    <Content Include="kurumsaluser\MesajDetay.aspx" />
     <Content Include="kurumsaluser\Mesajlar.aspx" />
     <Content Include="kurumsaluser\plugins\ckeditor\CHANGES.md" />
     <Content Include="kurumsaluser\plugins\ckeditor\LICENSE.md" />
@@ -1087,6 +1088,13 @@
     </Compile>
     <Compile Include="kurumsaluser\Makaleler.aspx.designer.cs">
       <DependentUpon>Makaleler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kurumsaluser\MesajDetay.aspx.cs">
+      <DependentUpon>MesajDetay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kurumsaluser\MesajDetay.aspx.designer.cs">
+      <DependentUpon>MesajDetay.aspx</DependentUpon>
     </Compile>
     <Compile Include="kurumsaluser\Mesajlar.aspx.cs">
       <DependentUpon>Mesajlar.aspx</DependentUpon>

@@ -11,7 +11,7 @@ namespace KurumsalEmlakSitesi.kurumsaluser
 {
 
 
-    public partial class Mesajlar
+    public partial class MesajDetay
     {
 
         /// <summary>
@@ -112,14 +112,5 @@ namespace KurumsalEmlakSitesi.kurumsaluser
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Panel pnl_gyanlis;
-
-        /// <summary>
-        /// dl_Mesajlar control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater dl_Mesajlar;
     }
 }
