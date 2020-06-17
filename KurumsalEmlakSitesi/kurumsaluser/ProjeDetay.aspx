@@ -39,8 +39,8 @@
                             <CKEditor:CKEditorControl ID="txt_icerik" runat="server"></CKEditor:CKEditorControl>
                         </div>
                         <div class="form-group" style="width: 200px;">
-                            <asp:Button ID="Button1" runat="server" CssClass="btn btn-block btn-primary" Text="GÜNCELLE" OnClick="Button1_Click" />
-                            <asp:Button ID="btn_mtemizle" runat="server" CssClass="btn btn-block btn-danger" Text="TEMİZLE" OnClick="btn_mtemizle_Click" />
+                            <asp:Button ID="Button1" runat="server" CssClass="btn btn-block btn-primary" Text="GÜNCELLE" OnClick="Button1_Click"  />
+                            <asp:Button ID="btn_mtemizle" runat="server" CssClass="btn btn-block btn-danger" Text="TEMİZLE"  />
                         </div>
                         <asp:Panel ID="pnl_gdogru" runat="server">
                             <div class="form-group">
