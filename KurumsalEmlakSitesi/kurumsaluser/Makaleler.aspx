@@ -105,7 +105,7 @@
                                                     <td>
                                                         <asp:Label ID="Label4" runat="server" Text='<%# Eval("MakaleTarih") %>'></asp:Label>
                                                     </td>
-                                                    <td><a href="MakaleDetay.aspx?<%# Eval("Makaleid") %>"><i class="fa fa-pencil"></i></a></td>
+                                                    <td><a href="MakaleDetay.aspx?Makaleid=<%# Eval("Makaleid") %>"><i class="fa fa-pencil"></i></a></td>
                                                     <td><a href="Makaleler.aspx?Makaleid=<%# Eval("Makaleid") %>&islem=sil"><i class="fa fa-trash-o"></i></a></td>
                                                 </tr>
                                             </ItemTemplate>
