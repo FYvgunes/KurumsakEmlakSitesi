@@ -22,31 +22,29 @@
                     </div>
                     <!-- /.box-header -->
                     <div class="box-body">
-                        <div class="form-group"> 
-                            <label for="exampleInputFile">Başlık</label>
-                            <asp:FileUpload ID="fu_Dosya" runat="server" />
-                            <p class="help-block">Makele Ekle</p>
-                        </div>
+                       
                         <div class="form-group">
-                            <label id="Label1" runat="server">Resim Seç</label>
+                            <label id="Label1" runat="server">Makale Başlık</label>
                             <asp:TextBox ID="txt_dBaslik" CssClass="form-control" runat="server"></asp:TextBox>
                         </div>
-                        <div class="form-group">
-                            <label id="Label2" runat="server">Resim seç </label>
-                            <asp:DropDownList ID="ddl_mKategori" CssClass="form-control" runat="server"></asp:DropDownList>
-                        </div>
+                        
                         <div class="form-group">
                             <label>Özet</label>
                             <asp:TextBox ID="txt_seoice" TextMode="MultiLine" CssClass="form-control" runat="server"></asp:TextBox>
                         </div>
                         <div class="form-group">
                             <label>İçerik</label>
-                            <CKEditor:CKEditorControl ID="CKEditorControl1" runat="server"></CKEditor:CKEditorControl>
+                            <CKEditor:CKEditorControl ID="txt_icerik" runat="server"></CKEditor:CKEditorControl>
                          
                         </div>
+                         <div class="form-group"> 
+                            <label for="exampleInputFile">Başlık</label>
+                            <asp:FileUpload ID="fu_Dosya" CssClass="form-control" runat="server" />
+                            <p class="help-block">Makele Ekle</p>
+                        </div>
                         <div class="form-group" style="width: 200px;">
-                            <asp:Button ID="Button1" runat="server" CssClass="btn btn-block btn-primary" Text="EKLE" />
-                            <asp:Button ID="btn_mtemizle" runat="server" CssClass="btn btn-block btn-danger" Text="TEMİZLE" />
+                            <asp:Button ID="Button1" runat="server" CssClass="btn btn-block btn-primary" Text="EKLE" OnClick="Button1_Click" />
+                            <asp:Button ID="btn_mtemizle" runat="server" CssClass="btn btn-block btn-danger" Text="TEMİZLE" OnClick="btn_mtemizle_Click" />
                         </div>
                         <asp:Panel ID="pnl_gdogru" runat="server">
                             <div class="form-group">
@@ -99,16 +97,16 @@
                                             <ItemTemplate>
                                                 <tr>
                                                     <td>
-                                                       
+                                                        <asp:Label ID="Label2" runat="server" Text='<%# Eval("Makaleid") %>'></asp:Label>
                                                     </td>
                                                     <td>
-                                                        
+                                                        <asp:Label ID="Label3" runat="server" Text='<%# Eval("MakaleAD") %>'></asp:Label>
                                                     </td>
                                                     <td>
-                                                        
+                                                        <asp:Label ID="Label4" runat="server" Text='<%# Eval("MakaleTarih") %>'></asp:Label>
                                                     </td>
-                                                    <td><a href=""><i class="fa fa-pencil"></i></a></td>
-                                                    <td><a href=""><i class="fa fa-trash-o"></i></a></td>
+                                                    <td><a href="MakaleDetay.aspx?<%# Eval("Makaleid") %>"><i class="fa fa-pencil"></i></a></td>
+                                                    <td><a href="Makaleler.aspx?Makaleid=<%# Eval("Makaleid") %>&islem=sil"><i class="fa fa-trash-o"></i></a></td>
                                                 </tr>
                                             </ItemTemplate>
                                         </asp:Repeater>

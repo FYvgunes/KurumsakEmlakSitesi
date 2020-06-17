@@ -11,7 +11,7 @@ namespace KurumsalEmlakSitesi.kurumsaluser
 {
 
 
-    public partial class Makaleler
+    public partial class MakaleDetay
     {
 
         /// <summary>
@@ -33,13 +33,22 @@ namespace KurumsalEmlakSitesi.kurumsaluser
         protected global::System.Web.UI.WebControls.TextBox txt_dBaslik;
 
         /// <summary>
-        /// txt_seoice control.
+        /// Label5 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_seoice;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Label5;
+
+        /// <summary>
+        /// txt_ozet control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txt_ozet;
 
         /// <summary>
         /// txt_icerik control.
@@ -49,15 +58,6 @@ namespace KurumsalEmlakSitesi.kurumsaluser
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::CKEditor.NET.CKEditorControl txt_icerik;
-
-        /// <summary>
-        /// fu_Dosya control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload fu_Dosya;
 
         /// <summary>
         /// Button1 control.
@@ -94,14 +94,5 @@ namespace KurumsalEmlakSitesi.kurumsaluser
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Panel pnl_gyanlis;
-
-        /// <summary>
-        /// dl_makaleler control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater dl_makaleler;
     }
 }

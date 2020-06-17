@@ -368,6 +368,7 @@
     <Content Include="kurumsaluser\build\less\users-list.less" />
     <Content Include="kurumsaluser\build\less\variables.less" />
     <Content Include="kurumsaluser\HİzmetDuzenle.aspx" />
+    <Content Include="kurumsaluser\MakaleDetay.aspx" />
     <Content Include="kurumsaluser\Makaleler.aspx" />
     <Content Include="kurumsaluser\MesajDetay.aspx" />
     <Content Include="kurumsaluser\Mesajlar.aspx" />
@@ -1081,6 +1082,13 @@
     </Compile>
     <Compile Include="kurumsaluser\HİzmetDuzenle.aspx.designer.cs">
       <DependentUpon>HİzmetDuzenle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kurumsaluser\MakaleDetay.aspx.cs">
+      <DependentUpon>MakaleDetay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kurumsaluser\MakaleDetay.aspx.designer.cs">
+      <DependentUpon>MakaleDetay.aspx</DependentUpon>
     </Compile>
     <Compile Include="kurumsaluser\Makaleler.aspx.cs">
       <DependentUpon>Makaleler.aspx</DependentUpon>
