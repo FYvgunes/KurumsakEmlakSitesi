@@ -6,18 +6,15 @@
 	       <div class="sidebar">
 	          <div class="sidebar_left_top">
 	      	     <div class="services">
-	      			<h3>Services</h3>
+	      			<h3>Hizmetler</h3>
 				      	<div class="services_list">
 				      		<ul>
-						  		<li><a href="#">Lorem ipsum dolor sit</a></li>
-						  		<li><a href="#">Duis aute irure dolor</a></li>
-						  		<li><a href="#">Sunt in culpa qui officia</a></li>
-						  		<li><a href="#">vel illum qui dolorem eum</a></li>
-						  		<li><a href="#">The wise man therefore</a></li>
-						  		<li><a href="#">Sunt in culpa qui officia</a></li>
-						  		<li><a href="#">Duis aute irure dolor</a></li>
-						  		<li><a href="#">Sunt in culpa qui officia</a></li>
-						  		<li><a href="#">Duis aute irure dolor</a></li>
+						  		   <asp:Repeater runat="server" ID="dl_Hizmetler">
+                                <ItemTemplate>
+                                    <li style="margin-left: 10px;"><a href="">
+                                        <asp:Label ID="Label1" runat="server" Text='<%# Eval("ServislerAd") %>'></asp:Label></a></li>
+                                </ItemTemplate>
+                            </asp:Repeater>
 				    		</ul>
 				      </div>
 	   			</div>
@@ -26,8 +23,12 @@
 			    	<div class="projects">
 			    		<h3>Projects</h3>
 			    		<div class="project_img">
-				    	   <img src="images/project1.jpg">
-				    	   <img src="images/project2.jpg">
+				    	  <asp:Repeater ID="dl_projeler" runat="server">
+                            <ItemTemplate>
+                                
+                                <asp:Image ID="Image1" runat="server"  ImageUrl='<%# Eval("ProjeResim") %>'/>
+                            </ItemTemplate>
+                        </asp:Repeater>
 				    	    <div class="view-all"><a href="events.html">See All</a></div>
 			    	   </div>
 			    	</div>
@@ -35,7 +36,7 @@
 	  		</div> 
        <div class="content">
 		      <div class="content_bottom">
-		      	<h2>About Us</h2>
+		      	<h2>Hakkımızda</h2>
 		      	<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident..</p>
 		      	   <h3>Lorem Ipsum is simply dummy text of the printing atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</h3>
 		      		<img src="images/about_img.jpg" alt="" />
@@ -44,18 +45,23 @@
     	</div>
     <div class="sidebar">
         <div class="sidebar_right_top">
-     	  <h3>Latest News</h3>
+     	  <h3>Haberler</h3>
      	   <div class="latestnews">
 		     <div class="latestnews_desc">
-		     	<h4>Jan 15, 2012</h4>
-		     	<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-		     	<span><a href="#">read more</a></span>
+		     	<asp:Repeater runat="server" ID="dl_haberler">
+                        <ItemTemplate>
+                            <div class="latestnews_desc">
+                                <h4>
+                                    <asp:Label ID="Label2" runat="server" Text='<%# Eval("Habericerik") %>'></asp:Label></h4>
+                                <p>
+                                    <asp:Label ID="Label3" runat="server" Text='<%# Eval("HaberTarih") %>'></asp:Label>
+                                </p>
+                                <span><a href="#">read more</a></span>
+                            </div>
+                        </ItemTemplate>
+                    </asp:Repeater>
 		     </div>
-		     	 <div class="latestnews_desc">
-		     		<h4>Jan 20, 2013</h4>
-		     		<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-		     		<span><a href="#">read more</a></span>
-		     	</div>
+		     	 
 		     	<div class="view-all"><a href="events.html">ViewAll</a></div>
           </div>	
         </div>
