@@ -36,30 +36,38 @@
 	  		</div> 
        <div class="content">
 		      <div class="content_bottom">
-		      	<h2>Contact Us</h2>
+		      	<h2>İletişim</h2>
 		      	<div class="contact-form">
 					    <form method="post" action="contact-post.html">
 					    	<div>
-						    	<span><label>Name</label></span>
-						    	<span><input name="userName" type="text" class="textbox"></span>
+						    	<span><label>Ad</label></span>
+                                <asp:TextBox ID="txt_ad" runat="server" CssClass="textbox" ></asp:TextBox>
+						    	
 						    </div>
 						    <div>
+                        
 						    	<span><label>E-mail</label></span>
-						    	<span><input name="userEmail" type="text" class="textbox"></span>
+                                <asp:TextBox ID="txt_mail" runat="server" CssClass="textbox" ></asp:TextBox>
+						    	
 						    </div>
 						    <div>
-						    	<span><label>Subject</label></span>
-						    	<span><textarea name="userMsg"> </textarea></span>
+						    	<span><label>İçerik</label></span>
+                                <asp:TextBox ID="txt_icerik" runat="server" CssClass="textbox"  TextMode="MultiLine"></asp:TextBox>
+						    	
 						    </div>
+                            
 						   <div>
-						   		<span><input type="submit" class="submit_button" value="Send"></span>
+						   		<asp:Button ID="btn_gonder" runat="server" CssClass="submit_button" Text="Gönder" OnClick="btn_gonder_Click" />
 						  </div>
+                            <div>
+                                    <asp:Label ID="Label4" runat="server" Text="Label" Visible="false" ForeColor="Green"></asp:Label>
+                            </div>
 					    </form>
 				  </div>
 				 		 <div class="contact_info">
-				 		 	<h2>Find Us Here</h2>
+				 		 	<h2>Adresimiz</h2>
 					    	  <div class="map">
-							   	    <iframe width="100%" height="175" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.in/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Lighthouse+Point,+FL,+United+States&amp;aq=4&amp;oq=light&amp;sll=26.275636,-80.087265&amp;sspn=0.04941,0.104628&amp;ie=UTF8&amp;hq=&amp;hnear=Lighthouse+Point,+Broward,+Florida,+United+States&amp;t=m&amp;z=14&amp;ll=26.275636,-80.087265&amp;output=embed"></iframe><br><small><a href="https://maps.google.co.in/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Lighthouse+Point,+FL,+United+States&amp;aq=4&amp;oq=light&amp;sll=26.275636,-80.087265&amp;sspn=0.04941,0.104628&amp;ie=UTF8&amp;hq=&amp;hnear=Lighthouse+Point,+Broward,+Florida,+United+States&amp;t=m&amp;z=14&amp;ll=26.275636,-80.087265" style="color:#777;text-align:left;font-size:0.85em">View Larger Map</a></small>
+							   	    <iframe src="https://www.google.com/maps/embed?pb=!1m24!1m12!1m3!1d7156.1047403145185!2d28.844542612575786!3d41.052127687352176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m9!3e6!4m3!3m2!1d41.0338888!2d28.8467308!4m3!3m2!1d41.0566785!2d28.8467371!5e0!3m2!1sen!2str!4v1592682190820!5m2!1sen!2str" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe><br><small><a href="https://maps.google.co.in/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Lighthouse+Point,+FL,+United+States&amp;aq=4&amp;oq=light&amp;sll=26.275636,-80.087265&amp;sspn=0.04941,0.104628&amp;ie=UTF8&amp;hq=&amp;hnear=Lighthouse+Point,+Broward,+Florida,+United+States&amp;t=m&amp;z=14&amp;ll=26.275636,-80.087265" style="color:#777;text-align:left;font-size:0.85em">View Larger Map</a></small>
 							  </div>
       				</div>
 		      </div>
